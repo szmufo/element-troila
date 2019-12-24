@@ -29,6 +29,9 @@
         }">
       </table-header>
     </div>
+    <div v-if="$slots.detail" class="el-table__detail-wrapper" ref="detailWrapper">
+      <slot name="detail"></slot>
+    </div>
     <div
       class="el-table__body-wrapper"
       ref="bodyWrapper"
